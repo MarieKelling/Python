@@ -6,15 +6,17 @@ print("The degree entry is: ", degree)
 print("The degree type is: ", input_type)
 
 # Add code here
-if temp[-1] == 'C' or temp[-1] == 'c':
+if temp[-1].upper() == "C":
     #Code to convert from C to F
     result = str(int(degree) * 1.8 + 32)
-    output_type = 'Fahrenheit'
-elif temp[-1] == 'F' or temp[-1] == 'f':
+    output_type = "Fahrenheit"
+    print("The temperature in", output_type, "is", result, "degrees.")
+elif temp[-1].upper() == "F":
     #Code to convert from F to C
     result = str(int((degree) - 32) * .5556)
-    output_type = 'Celsius'
+    output_type = "Celsius"
+    print("The temperature in", output_type, "is", result, "degrees.")
 else:
     print("Improper format. Please specify as Celsuis or fahrenheit")
 
-print("The temperature in", output_type, "is", result, "degrees.")
+
