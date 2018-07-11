@@ -26,11 +26,11 @@ while num.upper()!= "X":
         # put code to check for primes here
         for i in range(2, numInt):
             if (numInt % i) == 0:
-               print(numInt, "IS a prime number")
+               print(numInt, "is NOT a prime number")
                print()
                break
         else:
-            print(numInt, "is NOT a prime number")
+            print(numInt, "IS a prime number")
             print()
     
     # if input number is less than
