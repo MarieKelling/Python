@@ -14,15 +14,14 @@ t.dispSides()
 
 
 class Triangle(Shape):
-    def _init_(self, no_of_sides):
-        super(Triangle, self)._init_(no_of_sides = 3)
-        self.n = no_of_sides
+    def _init_(self):
+        Shape._init_(self, 3)
     #def findArea():
         #s + s + s / 2 
 
-    t = Triangle()
-    t.inputSides()
-    t.dispSides()
-    t.findArea() 
+t = Triangle(3)
+t.inputSides()
+t.dispSides()
+#t.findArea() 
     
     
