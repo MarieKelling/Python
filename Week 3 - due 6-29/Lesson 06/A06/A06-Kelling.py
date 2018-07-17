@@ -1,3 +1,4 @@
+#A06
 temp = input("Input the temperature you like to convert? (e.g., 45F, 102C etc.) : ")
 
 while temp[-1].upper() != "X":

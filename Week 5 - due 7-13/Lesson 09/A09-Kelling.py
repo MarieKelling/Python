@@ -16,12 +16,17 @@ t.dispSides()
 class Triangle(Shape):
     def _init_(self):
         Shape._init_(self, 3)
-    #def findArea():
-        #s + s + s / 2 
+        
+    def findArea(self):
+        a, b, c = self.sides
+        # calculate the semi-perimeter
+        s = (a + b + c) / 2
+        area = (s*(s-a)*(s-b)*(s-c)) ** 0.5
+        print('The area of the triangle is %0.2f' %area) 
 
 t = Triangle(3)
 t.inputSides()
 t.dispSides()
-#t.findArea() 
+t.findArea() 
     
     
