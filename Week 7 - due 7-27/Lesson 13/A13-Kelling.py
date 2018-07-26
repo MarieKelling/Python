@@ -19,13 +19,11 @@ class LinkedList :
             node.next.prev = node                       
             self.head = node
 
-    def remove_node(self, value):
-                pos = 0
-                searchedValue = self.search(value)
-                while value != searchedValue:
-                    pos += 1
-                del self[pos]
-                #l.remove(searchedValue)
+    def remove_node(self, p):                
+                temp = p.prev
+                p.prev.next = p.next
+                p.prev = temp 
+                
                 
     def search( self, k ) :
         p = self.head
@@ -64,6 +62,10 @@ l.add ('c')
 print ("List = ", l, "\n")
 
 #Delete node c
-print ("Delete: c")
-l.remove_node ('c')
+print ("Search: a")
+p = l.search('a')
+print ("The searched Node's data = " + p.data)
+print()
+print ("Delete: a")
+l.remove_node (p)
 print ("List = ", l, "\n")
