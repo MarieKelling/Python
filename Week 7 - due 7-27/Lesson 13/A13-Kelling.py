@@ -1,4 +1,4 @@
-#A 13 - Kelling 
+#A 13 - Marie Kelling 
 
 class Node :
     def __init__( self, data ) :
@@ -19,7 +19,7 @@ class LinkedList :
             node.next.prev = node                       
             self.head = node
 
-    def remove_node(self, p):                
+    def remove(self, p):                
                 temp = p.prev
                 p.prev.next = p.next
                 p.prev = temp 
@@ -61,11 +61,11 @@ print ("Add: c")
 l.add ('c')
 print ("List = ", l, "\n")
 
-#Delete node c
-print ("Search: a")
-p = l.search('a')
-print ("The searched Node's data = " + p.data)
-print()
-print ("Delete: a")
-l.remove_node (p)
+#Delete node b
+#print ("Search: b")
+p = l.search('b')
+#print ("The searched Node's data = " + p.data)
+#print()
+print ("Remove: b")
+l.remove(p)
 print ("List = ", l, "\n")

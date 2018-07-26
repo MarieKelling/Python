@@ -1,4 +1,4 @@
-#A 14 - Kelling
+#A 14 - Marie Kelling
 
 # Programming Courses Game
 
@@ -30,8 +30,9 @@ def main():
 
 	    
     # Display correct and incorrect answers
+    print()
     print ("You missed ",incorrect," courses.")
-    print ("You got ",correct," courses.\n")
+    print ("You got ",correct," courses correct.\n")
 
 # Entry Point
 response=""
